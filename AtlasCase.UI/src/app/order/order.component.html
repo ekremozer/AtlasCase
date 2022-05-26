@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="row">
+        <div class="col-9">
+          <h1>Sipariş Listesi</h1>
+        </div>
+        <div class="col-3 edit-col">
+          <button *ngIf="selectedOrder.orderNo!=null" type="button" class="btn btn-primary" (click)="openPopup()">
+            Düzenle
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>#</td>
+          <td>Müşteri Sipariş No</td>
+          <td>Çıkış Adresi</td>
+          <td>Varış Adresi</td>
+          <td>Miktar</td>
+          <td>Miktar Birim</td>
+          <td>Ağırlık</td>
+          <td>Ağırlık Birim</td>
+          <td>Malzeme Kodu</td>
+          <td>Not</td>
+          <td>Durum</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>
+            <input type="radio" name="selectOrder" (change)="setSelectedOrder(order)" value="order.orderNo" />
+          </td>
+          <td>{{order.customerOrderNo}}</td>
+          <td>{{order.portAddress}}</td>
+          <td>{{order.arrivalAddress}}</td>
+          <td>{{order.quantity}}</td>
+          <td>{{order.unit}}</td>
+          <td>{{order.weight}}</td>
+          <td>{{order.weightUnit}}</td>
+          <td>{{order.materialCode}}</td>
+          <td>{{order.note}}</td>
+          <td>{{order.orderStatus}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Siparişi Düzenle</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">Müşteri Sipariş No:</div>
+          <div class="col-6">{{selectedOrder.orderNo}}</div>
+        </div>
+        <div class="row">
+          <div class="col-6">Durum</div>
+          <div class="col-6">
+            <select [(ngModel)]="selectedOrder.orderStatusId">
+              <option *ngFor="let orderStatus of orderStatutes" name="orderStatusId" value="{{orderStatus.id}}">{{orderStatus.name}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="closePopup()">
+          Vazgeç
+        </button>
+        <button type="button" class="btn btn-success" (click)="setOrderStatus()">
+          Kaydet
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

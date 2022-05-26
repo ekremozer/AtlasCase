@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtlasCase.Api", "AtlasCase.Api\AtlasCase.Api.csproj", "{D2F98449-6605-4D82-95B4-3C30B8FF3BC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtlasCase.Data", "AtlasCase.Data\AtlasCase.Data.csproj", "{72FE865A-D3FE-4D7A-BF59-E42EB9C14B45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtlasCase.Service", "AtlasCase.Service\AtlasCase.Service.csproj", "{F06BF9B7-AA0A-4F59-8FEA-D23947099D3E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AtlasCase.UI", "AtlasCase.UI\", "{5AB662D8-0792-47F7-AEEB-E446EB5168AC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_9165"
+		Debug.AspNetCompiler.PhysicalPath = "AtlasCase.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9165\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_9165"
+		Release.AspNetCompiler.PhysicalPath = "AtlasCase.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9165\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "9165"
+		SlnRelativePath = "AtlasCase.UI\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2F98449-6605-4D82-95B4-3C30B8FF3BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F98449-6605-4D82-95B4-3C30B8FF3BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F98449-6605-4D82-95B4-3C30B8FF3BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F98449-6605-4D82-95B4-3C30B8FF3BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FE865A-D3FE-4D7A-BF59-E42EB9C14B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FE865A-D3FE-4D7A-BF59-E42EB9C14B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FE865A-D3FE-4D7A-BF59-E42EB9C14B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FE865A-D3FE-4D7A-BF59-E42EB9C14B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06BF9B7-AA0A-4F59-8FEA-D23947099D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06BF9B7-AA0A-4F59-8FEA-D23947099D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06BF9B7-AA0A-4F59-8FEA-D23947099D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06BF9B7-AA0A-4F59-8FEA-D23947099D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB662D8-0792-47F7-AEEB-E446EB5168AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB662D8-0792-47F7-AEEB-E446EB5168AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB662D8-0792-47F7-AEEB-E446EB5168AC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB662D8-0792-47F7-AEEB-E446EB5168AC}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20E3A2C3-BDDB-49E0-9B57-87636C27B8AF}
+	EndGlobalSection
+EndGlobal
